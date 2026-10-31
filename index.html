@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Web Projects · Vadym Rogynskyi</title>
+<meta name="description" content="Interactive websites built by Vadym Rogynskyi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Public+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#F2F3F5;--surface:#fff;--ink:#14171F;--muted:#5D6472;--line:#DDE0E6;--accent:#2350E6;
+  --display:"Barlow Condensed","Arial Narrow",sans-serif;--body:"Public Sans",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0E1117;--surface:#171B23;--ink:#E9ECF2;--muted:#9AA2B1;--line:#283040;--accent:#5C82FF}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.55}
+.wrap{max-width:1000px;margin:0 auto;padding:56px clamp(16px,4vw,32px) 64px}
+.lbl{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(2.8rem,8vw,4.8rem);line-height:.9;text-transform:uppercase;margin:8px 0 14px}
+h1 span{color:var(--accent)}
+.intro{color:var(--muted);max-width:58ch;margin:0 0 36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+a.card{display:grid;gap:10px;align-content:start;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px;color:inherit;text-decoration:none;transition:border-color .2s,transform .2s}
+a.card:hover,a.card:focus-visible{border-color:var(--accent);transform:translateY(-2px);outline:none}
+.swatch{height:6px;border-radius:3px}
+.card h2{font-family:var(--display);font-weight:800;font-size:1.9rem;text-transform:uppercase;line-height:1;margin:0}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.go{color:var(--accent);font-weight:600;font-size:.9rem}
+footer{margin-top:48px;font-size:.85rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <span class="lbl">Vadym Rogynskyi</span>
+  <h1>Web <span>Projects</span></h1>
+  <p class="intro">More interactive sites I've designed and built: a finance dashboard, a tennis pathway guide, a language roleplay trainer and a workout logger.</p>
+  <div class="grid">
+    <a class="card" href="basis/">
+      <div class="swatch" style="background:linear-gradient(90deg,#1E4E8C,#4FB3BF)"></div>
+      <span class="lbl">Finance dashboard</span>
+      <h2>Basis</h2>
+      <p>Import bank CSVs, auto-categorize income, expenses, dividends and investing, chart trends and get clear recommendations.</p>
+      <span class="go">Open site →</span>
+    </a>
+    <a class="card" href="baseline/">
+      <div class="swatch" style="background:linear-gradient(90deg,#C6D431,#1F6F4A)"></div>
+      <span class="lbl">Tennis</span>
+      <h2>Baseline</h2>
+      <p>A junior-and-pro tennis pathway guide: ITF, Tennis Europe and UTR structure, and concrete steps to raise your ranking.</p>
+      <span class="go">Open site →</span>
+    </a>
+    <a class="card" href="speakeasy/">
+      <div class="swatch" style="background:linear-gradient(90deg,#7A4FD1,#E2557A)"></div>
+      <span class="lbl">Language practice</span>
+      <h2>Speakeasy</h2>
+      <p>Pick a level and a scenario, roleplay in a new language and build a vocabulary notebook.</p>
+      <span class="go">Open site →</span>
+    </a>
+    <a class="card" href="cadence/">
+      <div class="swatch" style="background:linear-gradient(90deg,#E6492D,#2D5BE6)"></div>
+      <span class="lbl">Workout log</span>
+      <h2>Cadence</h2>
+      <p>Log sets, reps and weight for any sport, watch progress charts, get load suggestions and follow training programs.</p>
+      <span class="go">Open site →</span>
+    </a>
+  </div>
+  <footer>Built with HTML, CSS and JavaScript.</footer>
+</main>
+</body>
+</html>
